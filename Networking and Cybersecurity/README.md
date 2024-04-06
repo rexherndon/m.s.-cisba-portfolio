@@ -1,5 +1,3 @@
-# Evolution 1: Networking and Security Written Appraisal
-
 # Networking and Security Written Appraisal
 
 ***Rex A. Herndon***
