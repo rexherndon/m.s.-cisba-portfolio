@@ -1,71 +1,19 @@
-# Business Analytics Written Appraisal
+# Business Analytics Overview
 
-***Rex A. Herndon***
+This folder contains my written appraisal for the Business Analytics curriculum area in the Master of Computer Information Systems and Business Analytics (MS CISBA) degree program. It goes through the classes I have taken within the curriculum, what they have taught me, the strengths and weaknesses I have regarding this knowledge area, samples of the work I have done within these classes, and any future developments I wish to make related to this knowledge area.
 
-*M.S. - Computer Information Systems & Business Analytics (May 2024)*
+In the Business Analytics curriculum area, I have taken two courses:
 
-*West Texas A&M University*
+- CIDM 6308 - Seminar in Data Analytics
+- CIDM 5310 - Business Intelligence and Decision Support Systems
 
-This written appraisal is meant to be a reflection of the knowledge and skills that I have developed within the “Business Analytics” curriculum areas of the Master of Computer Information Systems and Business Analytics (MS CISBA) degree, which I will officially earn in May 2024 after my completion of the MS CISBA Capstone Course.
+During that time, I produced different artifacts of work showcasing the knowledge and skills developed in this curriculum area. These artifacts can be found in three different repositories, but I have also taken the time to copy the contents from those repositories into sub-folders within this repository as well (to keep everything consolidated).
 
-The skills and knowledge I have developed here were based on the following classes I have taken within the Network and Cybersecurity knowledge areas of the curriculum:
+- [https://github.com/rexherndon/cidm-6308-artifact](https://github.com/rexherndon/cidm-6308-artifact)
+- [https://github.com/rexherndon/cidm-5310](https://github.com/rexherndon/cidm-5310)
 
-- Seminar in Data Analytics (CIDM 6308)
-- Business Intelligence and Decision Support Systems (CIDM 5310)
+The CIDM-6308 artifact is a portion of training data used for generating different data mining models and statistics needed to complete the final exam.
 
-The remaining sections of the appraisal will be broken down into the following sections:
+The CIDM-5310 repository explored and analyzed two datasets that were taken from NYC Open Data. These data frames are records of each motor vehicle collision recorded by NYPD between March 2016 and December 2021, with some outlier records even going as far back as 2012. The pre-processing, analysis, and visualization were all done using Python.
 
-- Summary Statement
-- Overview of Classes
-- My Strengths
-- My Weaknesses
-- Samples of Work
-- Future Developments
-
----
-
-## Summary Statement
-
-With my knowledge from the Business Analytics knowledge areas of the MS CISBA curriculum, I have been proven to be capable of understanding different ways to process and understand data, essential topics/aspects in the realms of data analytics, and the technical tools used within this scope.
-
----
-
-## Overview of Classes
-
-Both of the classes that I have taken in the curriculum have shared topics that they teach, such as the general process of collecting and analyzing data and the different ways it can be found, processed, or analyzed.
-
-In the “Business Intelligence and Decision Support Systems” (CIDM 6351) class, we focused a lot on using the Pandas package in Python for data analysis, and how to do data ETL with Pandas inside of a Jupyter Notebook. We also spent some time with web development, specifically with the LAMP stack (Linux, Apache, MySQL, and PHP), but our final project was more closely related to the data science portion of the class over the web development portion.
-
-In the “Seminar in Data Analytics” (CIDM 6355) class, we learned about the general process of data collection, preprocessing, and analysis, but we also focused on some of the most common data mining methods, when/where to use each them, how to compare between models, and how to use them in R/RStudio or in RapidMiner (and data visualization with Tableau). Some of these data mining methods included decision trees, naive bayes classification, logistic regression, and neural network models.
-
----
-
-## My Strengths
-
-Regarding my strengths, I found myself feeling the most comfortable with the theory and the general process of data analysis and how all of the different parts of acquiring, transforming, and loading data for visualization or further understanding fit together. Between this portion of the curriculum and the data management portion of the curriculum, it helped me understand a lot of the higher level topics of data analysis. I feel like once you understand the general process, it builds a road map where all of the specific tools and techniques you learn for data mining and data ETL fit in depending on the context of the business problem. 
-
----
-
-## My Weaknesses
-
-Within the Data Management curriculum, I noticed that there were times that I was struggling with some of the technical parts of the tools or models I was working with for data mining and analysis, such as some parts of Pandas or the LAMP stack for the BIDSS class or Tableau for the DA class. Thankfully, there’s plenty of resources and documentation to help navigate around obstacles like this.
-
----
-
-## Samples of Work
-
-Samples of my work from both of these classes can be found at the following repo’s:
-
-[https://github.com/rexherndon/cidm-6308-artifact](https://github.com/rexherndon/cidm-6308-artifact)
-
-[https://github.com/rexherndon/cidm-5310](https://github.com/rexherndon/cidm-5310)
-
-The CIDM-6308 artifact is a portion of the final exam we took for that class, and the CIDM-5310 artifact is another part of the final exam for that class. That repo does have files that describe only parts 1 and 3 of the project, but part 2 is actually irrelevant to understand the context of the other parts in the repo.
-
----
-
-## Future Developments
-
-In the future, I hope to become more proficient with the tools and techniques used in both of the classes I previously spoke about. A lot of companies depend on machine learning and data mining to develop a competitive edge through areas like artificial intelligence and decision management. I hope I can be able to help these companies with their development or even start my own company and utilize what data I can to have that competitive advantage.
-
-I believe the experience I have developed, recapped through this written appraisal, is enough for me to contribute substantially to my portfolio and the work that I will create for my MS capstone project.
+To substantiate my efforts in synthesizing the Business Analytics knowledge area in Chordity, I needed to find ways to gather user data on the web application so they could be processed, visualized, and analyzed. I first did this by creating an anonymous user feedback form and registering it with the back end of my application so it can be accessed and viewed. I was also able to integrate and access the metrics and trackers that Render provides on their hosting services as well, such as the time spent on each page of the platform, when users are on and off of the website, and what times they are accessing it. I have also created an API on my platform using the Django REST framework for fetching basic information about chat rooms as well. With these three methods of collecting data in place, once the platform can acquire a substantial amount of data, it can be further processed and analyzed to draw conclusions about how users are using the platform and how Chordity can be improved upon.
