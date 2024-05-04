@@ -1,4 +1,4 @@
-# Rex Herndon - M.S. CISBA Portfolio
+# Rex Herndon - M.S. Computer Information Systems and Business Analytics Portfolio
 
 Hello! 
 
