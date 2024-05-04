@@ -5,7 +5,7 @@ In the Software Systems curriculum area, I have taken two courses:
 - CIDM 6303 - Technical Foundations in Computer Information Systems
 - CIDM 6325 - Electronic Commerce and Web Development
 
-During that time, I produced different artifacts of work showcasing the knowledge and skills developed in this curriculum area. These artifacts can be found in three different repositories, but I have also taken the time to copy the contents from those repositories into sub-folders within this repository as well (to keep everything consolidated).
+During that time, I produced different artifacts of work showcasing the knowledge and skills developed in this curriculum area. These artifacts can be found in two different repositories, but I have also taken the time to copy the contents from those repositories into sub-folders within this repository as well (to keep everything consolidated).
 
 - [https://github.com/rexherndon/cidm-6303](https://github.com/rexherndon/cidm-6303)
 - [https://github.com/rexherndon/guac-n-roll](https://github.com/rexherndon/guac-n-roll)
