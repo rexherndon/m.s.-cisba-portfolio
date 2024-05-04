@@ -1,4 +1,4 @@
-# Bio README.MD
+# Rex Herndon - M.S. CISBA Portfolio
 
 Hello! 
 

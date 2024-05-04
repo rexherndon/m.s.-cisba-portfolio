@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="article-entry">
+    <h2 class="text-light">{{ object.title }}</h2>
+    <p class="text-light">by {{ object.author }} | {{ object.date }}</p>
+    <img src="{{ object.image_url }}" class="card-img-top" alt="...">
+
+    <hr>
+
+    <p class="text-light">{{ object.body }}</p>
+</div>
+
+<hr>
+
+<h4 class="text-light">Add a comment</h4>
+    <form action="" method="post" class="text-light">{% csrf_token %}
+        {{ form|crispy }}
+    <button class="btn btn-success ml-2" type="submit">Save</button>
+</form>
+
+<hr>
+<h4 class="text-light">Comments</h4>
+{% for comment in article.comment_set.all %}
+    <p class="text-light"><b>{{ comment.author }}</b> &middot; {{ comment }}</p>
+{% endfor %}
+<hr>
+
+
+
+<p class="text-success text-center">Author's Only: <a class="link-success" href="{% url 'article_edit' article.pk %}">Edit</a> |
+    <a class="link-success" href="{% url 'article_delete' article.pk %}">Delete</a></p>
+<p class="text-success text-center">Back to <a class="link-success" href="{% url 'article_list' %}">All Articles</a>.</p>
+{% endblock content %}

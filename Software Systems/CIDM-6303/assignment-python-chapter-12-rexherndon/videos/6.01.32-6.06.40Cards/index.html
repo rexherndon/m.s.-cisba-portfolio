@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Products</h1>
+<dir class="row">
+    {% for product in products %}
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="{{ product.image_url}}" class="card-img-top" alt="{{ product.name}}">
+            <div class="card-body">
+                <h5 class="card-title">{{ product.name}}</h5>
+                <p class="card-text">${{ product.price }}</p>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</dir>
+{% endblock %}
+
+<!-- {% for product in products %} {% endfor %} are called template tags and run Django template language code-->
+<!-- {{ product.name }}  and {{ product.price }} will render a variable in html -->
+<!-- products is a variable passed to this template from view.py via render()-->
+<!-- More about Django template lananguage at https://docs.djangoproject.com/en/3.1/ref/templates/language/    -->
+<!-- extends 'base.html'  lets index.html inheret the html code from base.html- template-->
+<!-- block content  inserts lines 4-9 into the block content area in base.html template-->

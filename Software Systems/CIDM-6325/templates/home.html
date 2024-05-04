@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+
+<h1 class="text-light text-center">Guac N' Roll</h1>
+<h3 class="text-light text-center">"Reviewing all of the latest and greatest hits, so you can find the songs that you
+    love!"</h3>
+
+{% if user.is_authenticated %}
+
+<!-- http://127.0.0.1:8000/articles/ -->
+<br>
+
+<p class="text-center"><a href="/articles/" class="text-light btn btn-success ml-2">View Articles</a></p>
+<br>
+
+{% else %}
+
+<br>
+<br>
+
+<p class="text-light text-center">You are currently not logged in as a user. <a href="{% url 'signup' %}" class="text-success">Sign up</a> for a <i>free account</i> to read all of our latest articles!
+
+    <br>
+    <br>
+
+    {% endif %}
+
+<h2 class="text-light text-center">Featured Article:</h2>
+
+<h4 class="text-light text-center">Post Malone - Twelve Carat Toothache
+</h4>
+<br>
+
+<div class="text-center">
+    <!-- <iframe width="1730" height="683" src="https://www.youtube.com/embed/Tc0tLGWIqxA" title="Post Malone, The Weeknd - One Right Now" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+    <!-- Videos embeds will be implemented in the future. -->
+    <img src="https://consequence.net/wp-content/uploads/2019/11/post-malone-2020-runaway-tour-dates-tickets.png" class="border border-success">
+</div>
+
+<br>
+<p class="text-light text-center"><b>Preview: </b>Twelve Carat Toothache was another splendid surprise from Post Malone
+    when it was first released on June 3rd, 2022. The moment I saw “One Right Now (feat. The Weeknd)” on my recommended
+    feed, I was instantly hooked by the modern, yet vintage production that The Weeknd is notoriously known for. On top
+    of this, some of the teasers of some of the singles... <a href="/articles/7/" class="text-success">(Continue
+        Reading)</a></p>
+
+<br>
+<br>
+<hr class="text-light">
+
+<h2 class="text-light text-center">About Us:</h2>
+<br>
+<p class="text-light text-center">"<i>Guac N' Roll</i> was a music review blog that was founded and created by Rex Herndon (hernd), a graduate student at West Texas A&M University. Rex is currently pursuing their Masters of Computer Information Systems and Business Analytics, but he also shares a strong interest in music. Rex has been producing, recording, mixing & mastering and releasing music for over 6 years, and over time, he has been sharpening his skills and expanding his musical pallete with a wide variety of tracks and genres. Rex's interests of music and web development inspired him to create a music review blog, where he shares his opinions of all of the latest and greatest hits, so you can find your new favorite track!"</p>
+
+<br>
+
+<p class="text-light text-center">Links to my music can be found <a href="https://linktr.ee/basicallyimrex" target="_blank" class="link-success">here!</a></p>
+
+<div class="text-center">
+    <img src="https://i.scdn.co/image/ab67616d00001e02e5020454aa9de2ece2134f4c" alt="Rex's newest album, Sunset Drive">
+</div>
+
+
+<br>
+<br>
+<br>
+
+
+{% endblock content %}

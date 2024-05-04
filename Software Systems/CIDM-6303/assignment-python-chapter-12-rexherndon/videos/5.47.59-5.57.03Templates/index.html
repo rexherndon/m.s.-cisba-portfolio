@@ -1,0 +1,12 @@
+<h1>Products</h1>
+<ul>
+    {% for product in products %}
+    <li>{{ product.name }} (${{ product.price}})</li>
+    {% endfor %}
+</ul>
+
+
+<!-- {% for product in products %} {% endfor %} are called template tags and run Django template language code-->
+<!--  {{ product.name }}  and {{ product.price }} will render a variable in html -->
+<!-- products is a variable passed to this template from view.py via render()-->
+<!-- More about Django template lananguage at https://docs.djangoproject.com/en/3.1/ref/templates/language/    -->

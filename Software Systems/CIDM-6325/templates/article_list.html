@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block title %}Articles{% endblock title %}
+
+{% block content %}
+
+<div class="text-center">
+    <h1 class="text-light">Articles</h1>
+    <h4 class="text-light">Click on an article's title to view more!</h4>
+</div>
+<br>
+
+<div class="row">
+{% for article in article_list %}
+<div class="col-sm-6">
+
+    <div class="card text-light bg-success">
+
+        <div class="card-header">
+            <a class="link-light" href="{% url 'article_detail' article.pk %}">
+                <span class="font-weight-bold"><b>{{ article.title }}</b></span>
+            </a>
+            &middot;
+            <span class="text-light">by {{ article.author }} | {{ article.date }}</span>
+        </div>
+
+        <div class="card-body">
+            <p class="text-truncate">{{ article.body }}</p>
+        </div>
+
+        <div class="card-footer text-dark">
+            {% for comment in article.comment_set.all %}
+            <p>
+                <span class="font-weight-bold">
+                    {{ comment.author }} &middot; 
+                </span>
+                
+                    {{ comment }}
+                
+            </p>
+            {% endfor %}
+        </div>
+    </div>
+    <br />
+</div>
+{% endfor %}
+</div>
+{% endblock content %}
